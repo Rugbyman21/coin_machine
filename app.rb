@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/coin_combination')
+require('./lib/coin_machine')
 also_reload('lib/**/*.rb')
 
 get('/') do
@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/change') do
-  @change = params.fetch("cents").to_i.coin_combination()
+  @change = params.fetch("cents").to_i.coin_machine()
   erb(:change)
 end

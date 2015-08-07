@@ -1,5 +1,5 @@
 class Fixnum
-  define_method(:coin_combination) do
+  define_method(:coin_machine) do
     total_cents = self
     quarters = 0
     dimes = 0
