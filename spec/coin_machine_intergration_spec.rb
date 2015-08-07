@@ -8,6 +8,6 @@ describe('the making change process', {:type => :feature}) do
     visit('/')
     fill_in('cents', :with => 41)
     click_button('Make change!')
-    expect(page).to have_content('1 quarters')
+    expect(page).to have_content('1 quarter')
   end
 end
